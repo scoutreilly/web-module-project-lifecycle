@@ -10,9 +10,9 @@ class OneFollow extends React.Component {
         <h3>{this.props.follower.login}</h3>
         {console.log(this.props)}
         <Profile src={this.props.follower.avatar_url} alt="profile pic" />
-        <h3>
+        <p>
           <a href={this.props.follower.html_url}>See in GitHub</a>
-        </h3>
+        </p>
       </Card>
     );
   }
