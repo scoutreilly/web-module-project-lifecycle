@@ -1,13 +1,23 @@
 import React from "react";
 
-import axios from "axios";
+import Card from "./styled-components/CardStyled";
+import Profile from "./styled-components/ProfileImage";
 
 class UserCard extends React.Component {
+  constructor() {
+    super();
+  }
+
   render() {
     return (
-      <div>
-        <h1>user info here</h1>
-      </div>
+      <Card>
+        <h3>{`${this.props.username}'s git details`}</h3>
+        <Profile src={`${this.props.avatar}`} alt="profile image" />
+        <p>Git Username: {this.props.login}</p>
+        <p>Currently working at {this.props.company}</p>
+        <p>{this.props.repos} public repos</p>
+        <p>{this.props.followers} followers</p>
+      </Card>
     );
   }
 }

@@ -5,11 +5,12 @@ const Card = styled.div`
   align-content: center;
   padding: 50px;
   border: 3px #77b3d9 solid;
-  border-radius: 20px;
+  border-radius: 5px;
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 40%;
+  margin-bottom: 3em;
 `;
 
 export default Card;
